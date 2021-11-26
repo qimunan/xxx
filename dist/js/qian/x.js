@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#btn").click(function(){$.ajax({dataType:"json",type:"get",url:"../../api/menu.json",success:function(n){n.forEach(function(n){$("#container").append(n.名称)})},error:function(){alert("失败喽")}})})});
